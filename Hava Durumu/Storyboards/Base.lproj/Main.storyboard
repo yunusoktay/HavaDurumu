@@ -339,7 +339,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRK-ac-x4e">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRK-ac-x4e">
                                             <rect key="frame" x="20" y="11" width="164.5" height="28"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -376,6 +376,7 @@
                                         </stackView>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="DRK-ac-x4e" firstAttribute="leading" secondItem="Aqa-zh-EHF" secondAttribute="leadingMargin" id="95R-xk-FxI"/>
                                         <constraint firstItem="47G-gR-aKV" firstAttribute="leading" secondItem="DRK-ac-x4e" secondAttribute="trailing" constant="10" id="Ecw-dq-xee"/>
                                         <constraint firstItem="dlu-bQ-XHF" firstAttribute="top" secondItem="Aqa-zh-EHF" secondAttribute="topMargin" id="MTh-j6-ogr"/>
                                         <constraint firstItem="47G-gR-aKV" firstAttribute="leading" secondItem="DRK-ac-x4e" secondAttribute="trailing" constant="10" id="UAX-m4-kOl"/>

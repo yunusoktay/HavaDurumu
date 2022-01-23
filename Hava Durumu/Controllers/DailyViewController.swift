@@ -31,4 +31,19 @@ class DailyViewController: UIViewController {
     @IBOutlet weak var humidityLabel: UILabel!
     
     // MARK: - Functions
+    func updateUI(with weather: Weather) {
+        guard let today = weather.data.first else {return}
+        
+        dateLabel.text = DateConfiguration.convertDateToDayName(date: today.datetime, identifier: "d MMM, EEEE")
+        temperatureLabel.text = "\(Int(today.temperature))º"
+        weatherIconImageView.image = today.weatherDescription.icon
+        cityNameLabel.text = weather.cityName
+        weatherStatusLabel.text = today.weatherDescription.description
+        maximumTemperatureLabel.text = "\(Int(today.maxTemperature))º"
+        minimumTemperatureLabel.text = "\(Int(today.minTemperature))º"
+        windDirectionLabel.text = today.windDirection
+        uvIndexLabel.text = String(format: "%1.f", today.uvIndex)
+        windSpeedLabel.text = "\(String(format: "%1.f", today.windSpeed)) km/s"
+        humidityLabel.text = "%\(today.relativeHumidity)"
+    }
 }

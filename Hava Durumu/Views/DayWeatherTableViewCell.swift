@@ -17,4 +17,10 @@ class DayWeatherTableViewCell: UITableViewCell {
     @IBOutlet weak var minimumTemperatureLabel: UILabel!
     
     // MARK: - Functions
+    func update(with weather: DailyWeather) {
+        dayNameLabel.text = DateConfiguration.convertDateToDayName(date: weather.datetime, identifier: "EEEE")
+        iconImageView.image = weather.weatherDescription.icon
+        maximumTemperatureLabel.text = "\(Int(weather.maxTemperature))"
+        minimumTemperatureLabel.text = "\(Int(weather.minTemperature))"
+        }
 }
