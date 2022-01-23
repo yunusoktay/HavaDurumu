@@ -23,12 +23,12 @@
                                 <segment title="Haftalık"/>
                             </segments>
                             <connections>
-                                <action selector="segmentedControlValueChanged:" destination="37l-d4-wd1" eventType="valueChanged" id="VUn-fb-Y9y"/>
+                                <action selector="segmentedControlValueChanged:" destination="37l-d4-wd1" eventType="valueChanged" id="TDe-2A-2df"/>
                             </connections>
                         </segmentedControl>
                     </navigationItem>
                     <connections>
-                        <outlet property="segmentedControl" destination="kNi-Kv-EIc" id="chF-gD-940"/>
+                        <outlet property="segmentedControl" destination="kNi-Kv-EIc" id="jBI-Ch-D4I"/>
                     </connections>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wgW-7t-32M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -305,6 +305,19 @@
                             <constraint firstItem="L0d-oN-s9E" firstAttribute="bottom" secondItem="ZHw-hc-Ifj" secondAttribute="bottom" constant="284" id="uLh-Rm-i1w"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityNameLabel" destination="hHc-PP-PdH" id="J7f-pY-Tl2"/>
+                        <outlet property="dateLabel" destination="Kvc-fu-5Sp" id="jq5-Bg-z6v"/>
+                        <outlet property="humidityLabel" destination="0HL-Gt-dUx" id="eq1-St-JhM"/>
+                        <outlet property="maximumTemperatureLabel" destination="NDW-xL-RAd" id="s6N-GW-sKa"/>
+                        <outlet property="minimumTemperatureLabel" destination="Iwb-cw-4h4" id="nfw-05-hvX"/>
+                        <outlet property="temperatureLabel" destination="cQb-HQ-Xkv" id="PZ1-LA-FDc"/>
+                        <outlet property="uvIndexLabel" destination="rm6-gH-XnH" id="256-nM-zWM"/>
+                        <outlet property="weatherIconImageView" destination="Oco-oh-oKa" id="WHu-Qv-9Hv"/>
+                        <outlet property="weatherStatusLabel" destination="pNc-aL-m1I" id="wzs-TH-Dos"/>
+                        <outlet property="windDirectionLabel" destination="i9g-Eb-xPq" id="J35-7o-uc7"/>
+                        <outlet property="windSpeedLabel" destination="ozE-7F-TR9" id="ERe-Mi-Z23"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pfS-01-OZW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -372,6 +385,12 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="dlu-bQ-XHF" secondAttribute="bottom" id="xlP-N7-oCE"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dayNameLabel" destination="DRK-ac-x4e" id="zGR-LO-1uH"/>
+                                    <outlet property="iconImageView" destination="47G-gR-aKV" id="xJO-Y6-2Hu"/>
+                                    <outlet property="maximumTemperatureLabel" destination="SX5-kr-pf7" id="JDZ-9l-QNS"/>
+                                    <outlet property="minimumTemperatureLabel" destination="Sig-5y-Abx" id="BIO-kE-i0X"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

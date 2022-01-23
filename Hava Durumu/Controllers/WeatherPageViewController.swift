@@ -12,6 +12,7 @@ import CoreLocation
 class WeatherPageViewController: UIPageViewController {
     
     // MARK: - UI Elements
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
     
     // MARK: - Properties
     
@@ -23,4 +24,6 @@ class WeatherPageViewController: UIPageViewController {
     // MARK: - Functions
     
     // MARK: Actions
+    @IBAction func segmentedControlValueChanged(_ sender: UISegmentedControl) {
+    }
 }
